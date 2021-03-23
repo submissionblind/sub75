@@ -1,6 +1,6 @@
 
 //enable the XG-ext module (must use anf as input)
-//#define __XG_ENHANCED__
+#define __XG_ENHANCED__
 
 //use alternative CNF module because MAX size of clauses > 4
 #define __LONG_OR_CLAUSES__
