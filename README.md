@@ -40,7 +40,11 @@ The core structures in the different WDSat modules are statically allocated and,
 * __\_\_MAX_XEQ_SIZE\_\___ defines the maximum size of XOR-clauses. Be careful, since the size of XOR-clauses can increase when Gaussian Elimination is performed. Try to estimate, or at worst, set to __\_\_MAX_ID\_\___. When this value is underestimated, execution fails, but not necessarily straightaway. 
 
 ## Modification to the source code
-We have defines the costant __\_\_LONG_OR_CLAUSES\_\___ in ```config.h```. When this constant is defined, the new CNF module is used. We have also added configuration blocks for all parameters used in the paper.
+We have defined the costant __\_\_LONG_OR_CLAUSES\_\___ in ```config.h```. When this constant is defined, the new CNF module is used. We have also added configuration blocks for all parameters used in the paper. The current configuration is for MQ systems with parameters m=50 and n=25, using the XG-ext module. For instance, without any modification to the configuration file, the following execution can be made:
+
+``` ./wdsat_solver -i mq_benchmarks/m50n25_seed0.mq.anf -x ```
+
+This would output the solution followed by the number of conflicts.
 
 Our addition to the ```cnf.c``` code starts on line 376. At our addition to the ```cnf.h``` file starts on line 72.
 
