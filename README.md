@@ -4,7 +4,10 @@ This repository contains:
 * Input files used for benchmarks.
 
 The ```mq_benchmarks``` folder contains the 100 instances for each parameter set used to obtain results in Table 4, in all three forms: CNF, CNF-XOR and ANF.
+
 The ```mq_benchmarks``` folder contains the 100 instances for each parameter set used to obtain results in Table 5, in ANF form.
+
+CNF files start with ```CNF``` and end with ```.dimacs```. CNF-XOR files start with ```m``` and end with ```.dimacs```. ANF files start with ```m```and end with ```.anf.
 
 ## Instructions from WDSat documentation:
 ### Dependencies
