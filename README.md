@@ -7,7 +7,7 @@ The ```mq_benchmarks``` folder contains the 100 instances for each parameter set
 
 The ```mq_benchmarks``` folder contains the 100 instances for each parameter set used to obtain results in Table 5, in ANF form.
 
-CNF files start with ```CNF``` and end with ```.dimacs```. CNF-XOR files start with ```m``` and end with ```.dimacs```. ANF files start with ```m```and end with ```.anf```.
+CNF files start with ```CNF``` and end with ```.dimacs```. CNF-XOR files start with ```m``` and end with ```.dimacs```. ANF files start with ```m```and end with ```.anf```. For each instance, there is also a file ending with ```.sol``` that holds the correct solution to the Boolean polynomial system that the instance was derived from. 
 
 ## Instructions from WDSat documentation:
 ### Dependencies
