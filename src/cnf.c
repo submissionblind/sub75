@@ -488,8 +488,6 @@ inline bool cnf_infer(void) {
 					}
 				}
 			}
-			
-			cnf_fprint();
 		}
 	}
 	return true;
