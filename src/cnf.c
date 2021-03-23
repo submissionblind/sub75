@@ -590,7 +590,6 @@ bool cnf_initiate_from_dimacs(void) {
 	}
 	_free_mem(tmp_clauses_sat);
 	cnf_step_top = cnf_clause_step_top = cnf_history_top = cnf_history_top_it = 0LL;
-	cnf_fprint();
 	return true;
 }
 
